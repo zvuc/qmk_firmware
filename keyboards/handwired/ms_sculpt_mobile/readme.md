@@ -46,10 +46,16 @@ The Astar mini has all pins exposed , so you can do 18x8
 If you want a speaker, LEDs, etc., you'll need to free up a pin.  I recommend joining columns
 R and L to the same pin.
 
-Building - add ASTAR=1 to the compile line or leave out for teensy2++
+Building - Use `handwired/ms_sculpt_mobile/a_star_mini` or `handwired/ms_sculpt_mobile/teensy_2pp` depending on which MCU you picked.
 
-Make example for this keyboard (after setting up your build environment):
+Build example for this keyboard (after setting up your build environment):
 
-    make handwired/ms_sculpt_mobile:default
+A-Star Mini:
+
+    qmk compile -kb handwired/ms_sculpt_mobile/a_star_mini -km default
+
+Teensy 2.0++:
+
+    qmk compile -kb handwired/ms_sculpt_mobile/teensy_2pp -km default
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
